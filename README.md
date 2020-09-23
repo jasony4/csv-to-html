@@ -7,5 +7,5 @@ This uses papa parse to parse values in a CSV file to an array which then passes
 Title
 # Column 2 
 Description
-#Column 3 
+# Column 3 
 Image file name
