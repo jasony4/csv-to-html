@@ -1,0 +1,284 @@
+@font-face {
+    font-family: "manropelight";
+    src: url(fonts/web/Manrope-Light.woff2) format("woff2"),
+    url(fonts/ttf/Manrope-Light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 300; 
+    }
+ 
+
+   
+ @font-face {   
+    font-family: "manropebold";  
+    src: url(fonts/web/Manrope-Bold.woff2) format("woff2"),     
+    url(fonts/ttf/Manrope-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 700; 
+    }
+ * , *:after, *:before {
+        box-sizing: border-box;
+    }
+html{
+    font-family: 'manropelight' !important;
+}
+.landingImage{
+    opacity:0.4;
+    height:80vh;
+    width:100%;
+    object-fit: cover;
+}
+p#typeSlow{
+    z-index:+1;
+    font-size:1.5em;
+    color:#F1E6B2;
+    
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+
+div.landingPage{
+    height:100%;
+}
+/* content shows behind nav on top so adding padding to whole body */
+body{
+    padding:90px;
+}
+
+
+
+
+/*Global Navbar Stylings*/
+.navBrandLogoHide {
+    display:none;
+}
+
+.navbar-toggler {
+    outline: 0 !important;
+}
+
+.navbar {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navListLogo {
+    padding:0px 80px 0px 80px;
+}
+/*Global styling for Navbar for large screens*/
+@media screen and (min-width: 768px) {
+/*makes the link with writing "Home" disappear on large screens so that brand logo serves as hlink to index page*/
+    #disappearHome {
+        display:none;
+    }
+
+/*shifts the outer nav links away from the inner nav links on large screens*/
+    .nav-item1-shift {
+        margin-right:40px ;
+    }
+    
+    .nav-item4-shift {
+        margin-left:40px ;
+    }
+
+}
+
+
+
+/*Global styling for Navbar for small screens*/
+/*removes the brand logo from the nav list, the logo will now serve as the collapse button. Home link will be in the collapsed menu*/
+@media screen and (max-width: 768px) {
+    #navListLogo {
+        display:none;
+    }
+}
+/* Index Nav Styling */
+.navbar-index {
+    background-color:#daab28;
+}
+#indexBody {
+    background-color: #daab28;
+}
+.nav-link-index {
+    color:#007377;
+}
+.navbar-nav .nav-item-index a:hover { 
+    color: #F1E6B2 !important; 
+    opacity:0.8;
+}
+
+
+/* Contact Nav Styling */
+#contactBody {
+    background-color: #003B49;
+}
+.nav-link-contact {
+    color:#CB6015;
+}
+.navbar-contact {
+    background-color:#003B49;
+}
+.navbar-nav .nav-item-contact a:hover { 
+    color: #F1E6B2 !important; 
+    opacity:0.8;
+}
+/* Contact styling */
+.submitButton{
+    background-color: #CB6015 !important;
+    color:#F1E6B2;
+}
+.underForm{
+    color:#CB6015!important;
+}
+.contactLabel{
+    color:#CB6015;
+}
+/* Articles Nav Styling */
+.navbar-articles {
+    background-color:#F1E6B2;
+}
+#articlesBody {
+    background-color: #F1E6B2;
+}
+.nav-link-articles {
+    color:#003B49;
+}
+.navbar-nav .nav-item-articles a:hover { 
+    color: #CB6015 !important; 
+    opacity:0.8;
+}
+
+div.articleTextRight{
+    color:#003B49 !important;
+    font-size:1em;
+    opacity:0.6;
+}
+img.articleImage:hover{
+    opacity:1;
+}
+
+.article-image-container{
+    width:100%;
+    background-color: #F1E6B2;
+    
+    
+}
+
+.article-text-container{
+    height:200px;
+    width:100%;
+    background-color: #F1E6B2;
+    margin-top:-10px;
+}
+
+.article-h1{
+    font-size: x-large;
+}
+
+.article-h2{
+    font-size: large;
+}
+.article-p{
+    font-size: large;
+}
+
+.articleRow {
+    padding-bottom:40px;
+}
+@media screen and (max-width: 768px) {
+    .article-h1 {
+        font-size: large;
+        text-align: center;
+    }
+    .article-h2 {
+        font-size: small;
+        text-align: center;
+    }
+    .article-p {
+        font-size: small;
+        text-align: center;
+    }
+    .articleRow {
+        height: 90vh;
+    }
+
+    .article-text-container{
+        height:400px;
+    }
+    
+    .articleImage {
+        opacity:1;
+    }
+}
+.container-fluid{
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+.articlesMainContainer{
+    background-color: #F1E6B2
+}
+
+.articleImage{
+    height:28vh;
+    width: 100%;
+    object-fit: scale-down;
+    margin-top: -15px;
+    opacity:0.6;
+}
+
+/* about Nav Styling */
+.navbar-about {
+    background-color:#007377;
+}
+#aboutBody {
+    background-color: #007377;
+}
+.nav-link-about {
+    color:#daab28;
+}
+.navbar-nav .nav-item-about a:hover { 
+    color: #F1E6B2 !important; 
+    opacity:0.8;
+}
+
+
+
+/* Journal Nav Styling */
+.navbar-journal {
+    background-color:#CB6015;
+}
+#journalBody {
+    background-color: #CB6015;
+    height:100vh;
+}
+div.journalTextRight{
+    color:#F1E6B2 !important;
+    font-size:1em;
+    opacity:0.6;
+}
+img.journalImage:hover{
+    opacity:0.7;
+}
+.nav-link-journal {
+    color:#003B49;
+}
+.navbar-nav .nav-item-journal a:hover { 
+    color: #F1E6B2 !important; 
+    opacity:0.8;
+}
+
+/*about page stylings*/
+.about-container {
+    background-color:#007377;
+    
+}
+.about-text{    
+    color:#F1E6B2;
+    font-family: 'manropelight';
+    font-size: large;
+}
+
